@@ -100,12 +100,12 @@
 	padding-left: 100px;
 }
 .models__specs {
-	display: flex;
+	font-size: 15px;
 }
 
-.specs__left {
+/*.specs__left {
 
 }
 .specs__right {
 	
-}
+}*/

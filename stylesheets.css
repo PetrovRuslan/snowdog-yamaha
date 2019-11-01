@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
+/*body {
+	background-image: url(images/background/background.png);
+	/*width: 1920px;
+}*/
+.site {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.container {
+	width: 100%;
+	max-width: 1920px;
+	background-image: url(images/background/background.png);
+	margin: 0 auto;
+	/*height: 1000px;*/
+}
+.logo_wrap {
+	display: flex;
+	padding-top: 50px;
+	padding-bottom: 65px;
+}
+
+.logo_wrap__snowdog {
+	padding-right: 50px;
+}
+.logo_wrap__yamaha {
+	font-size: 31px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 0.861;
+	padding-right: 80px
+}
+.logo_wrap__yamaha span {
+	font-size: 48px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 900;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	line-height: 0.861;
+}	
+.article {
+	display: flex;
+	flex-direction: column;
+}
+.article__row {
+	display: flex;
+	width: 100%;
+}
+.article__item {
+	width: 50%;
+	padding-right: 20px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.article__item h2 {
+	color: #314279;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 200;
+	font-size: 30px;
+}
+
+.models {
+	padding-top: 100px;
+}
+.models_h1 {
+	text-align: center;
+	font-size: 45px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.models__column_wrap {
+	display: flex;
+}
+
+.models__item {
+	font-size: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	width: 50%;
+}
+.models__item-name {
+	text-align: center;
+}
+.price_y13me {
+	text-align: left;
+	padding-left: 105px;
+}
+.price_y13mer {
+	text-align: right;
+	padding-right: 100px;
+}
+.models__img {
+	padding-left: 100px;
+}
+.models__specs {
+	display: flex;
+}
+
+.specs__left {
+
+}
+.specs__right {
+	
+}

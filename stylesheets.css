@@ -103,7 +103,7 @@
 	font-size: 15px;
 }
 table {
-	width: 93%;
+	width: 60%;
 	border-collapse: collapse;
 	margin: 0 auto;
 }
@@ -134,7 +134,11 @@ td:nth-child(odd) {
 
 .features {
 	width: 80%;
-	margin: 0 auto;
+	margin: 90px auto 0px;
+}
+.features h2 {
+	text-align: center;
+	font-size: 45px;
 }
 .features__item {
 	display: flex;
@@ -146,7 +150,9 @@ td:nth-child(odd) {
 .features__text {
 	width: 50%;
 }
-
+.accs__row {
+	display: flex;
+}
 /*.specs__left {
 
 }

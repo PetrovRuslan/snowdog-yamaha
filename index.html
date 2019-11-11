@@ -5,10 +5,24 @@
 	<title>Snowdog-Yamaha</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 	<script type="text/javascript" src="scripts/dopelessRotate.js"></script>
+ 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="site">
+<!-- <div id="run3d" style="width: 100px; height: 100px; background-color: black;"></div> -->
+<!-- 
+			<div class=’dopelessrotate’>
+
+				<img id='rotateimage' src='images/tehniks/ATV/hisun_500/3d/testing000.png' width='570' height='300'>
+
+			</div>
+ -->
+
 			<div class="logo_wrap">
 				<div class="logo_wrap__snowdog">
 					<img src="images/logo/snowdog_logo.png">
@@ -43,21 +57,32 @@
 					</article>
 				</div>
 			</div>
+			<!-- <a href="https://source.unsplash.com/IvfoDk30JnI/1500x1000" data-fancybox data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+			    <img src="https://source.unsplash.com/IvfoDk30JnI/240x160" />
+		 	</a>	 -->
 			<div class="models">	
 				<h1 class="models_h1">Модели</h1>
 				<div class="models__column_wrap">
 					<div class="models__item">
 						<p class="models__item-name">Snowdog-Yamaha Y13ME</p>
 						<p class="price_y13me">129 000 &#8381;</p>
-						<div class="models__img">
-							<img src="images/models/Sd_Yamaha_me-front_left.png">
+						<button id="run3d__left">button</button>
+						<div class="models__img dopelessrotate">
+							<!-- <a href="images/models/me/3D/yamaha_570x300049.jpg" data-fancybox data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
+    							<img id='rotateimage__left' src='images/models/me/3D/yamaha_570x300049.jpg' width='570' height='300'>
+  							</a> -->
+  							<img id='rotateimage__left' src='images/models/me/3D/yamaha_570x300049.jpg' width='570' height='300'>
+							<!-- <img src="images/models/Sd_Yamaha_me-front_left.png"> -->
+							
 						</div>
 					</div>
 					<div class="models__item">
 						<p class="models__item-name">Snowdog-Yamaha Y13MER</p>
 						<p class="price_y13mer">149 000 &#8381;</p>
-						<div class="models__img">
-							<img src="images/models/sd_yamaha_mer-front_right.png">
+						<button id="run3d__right">button</button>
+						<div class="models__img dopelessrotate">
+							<!-- <img id='rotateimage__right' src='images/models/mer/3D/yamaha_mer-570x300038.jpg' width='570' height='300'> -->
+							<img id='rotateimage__right' src='images/models/me/3D/yamaha_570x300037.jpg' width='570' height='300'>
 						</div>
 					</div>
 				</div>
@@ -364,3 +389,27 @@
 	</div>
 </body>
 </html>
+<script>
+	jQuery('#run3d__left').click(function(){
+		jQuery('.tech-image').remove();
+		// jQuery('#run3d').addClass('active');
+		jQuery('#rotateimage__left').tsRotate({
+		'pathtophp':'/templates/baltmotors/',
+		'zoom':false,
+		'reverse': true,
+		'disablelogo': true,
+		/*'autorotate': true*/
+		});
+	});
+	jQuery('#run3d__right').click(function(){
+		jQuery('.tech-image').remove();
+		// jQuery('#run3d').addClass('active');
+		jQuery('#rotateimage__right').tsRotate({
+		'pathtophp':'/templates/baltmotors/',
+		'zoom':false,
+		'reverse': true,
+		'disablelogo': true,
+		/*'autorotate': true*/
+		});
+	});
+</script>

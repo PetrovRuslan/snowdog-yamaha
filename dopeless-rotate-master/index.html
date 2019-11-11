@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dopeless test</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ 	<script type="text/javascript" src="scripts/dopelessRotate.js"></script>
+ 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+ 	<style>
+ 		body {
+ 			background-color: #f1f7ed;
+ 		}
+
+ 		.round {
+ 			display: none !Important; 
+ 		}
+ 	</style>
+</head>
+<body>
+
+<button id="run3d">button</button>
+<!-- <div id="run3d" style="width: 100px; height: 100px; background-color: black;"></div> -->
+
+<div class=’dopelessrotate’>
+
+	<img id='rotateimage' src='images/tehniks/ATV/hisun_500/3d/testing000.png' width='570' height='300'>
+
+</div>
+
+<script>
+	jQuery('#run3d').click(function(){
+		jQuery('.tech-image').remove();
+		jQuery('#run3d').addClass('active');
+		jQuery('#rotateimage').tsRotate({
+		'pathtophp':'/templates/baltmotors/js/',
+		'zoom':false,
+		'reverse': true,
+		'disablelogo': true,
+		/*'autorotate': true*/
+		});
+	});
+</script>
+</body>
+</html>

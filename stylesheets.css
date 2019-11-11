@@ -4,6 +4,7 @@ body {
 	background-image: url(images/background/background.png);
 	width: 1920px;
 	font-family: 'Open Sans', sans-serif;
+	/*overflow: hidden;*/
 }
 .site {
 	width: 1140px;
@@ -113,6 +114,7 @@ body {
 }
 .models__img {
 	padding-left: 100px;
+	width: 367px;
 }
 .models__specs {
 	font-size: 15px;

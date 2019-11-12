@@ -116,6 +116,22 @@ body {
 	padding-left: 100px;
 	width: 367px;
 }
+.models__img img {
+	width: 100%;
+	height: auto;
+}
+.ts_holder{
+	width: 100%!important;
+	height: auto!important;
+	overflow: visible;
+}
+/*.round {
+	display: none!important;
+}*/
+.ts_img_view {
+	width: 100%;
+	height: auto;
+}
 .models__specs {
 	font-size: 15px;
 }
@@ -278,4 +294,22 @@ td:nth-child(odd) {
 .tab :checked ~ .tab-content {
 	display: block; /* Показываем содержимое */
 	background-color: #cccccd;
+}
+
+.rotateimage {
+	background:#f0f0f0;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right:15px;
+	color:#3b3b3b;
+	cursor: pointer;	
+    width:47px;
+    height:47px;
+    border-radius:50%;
+	text-align:center;
+	line-height:47px;
+}
+
+.dopelessrotate {
+	display: none;
 }

@@ -12,19 +12,12 @@
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="stylesheets.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="site">
-<!-- <div id="run3d" style="width: 100px; height: 100px; background-color: black;"></div> -->
-<!-- 
-			<div class=’dopelessrotate’>
-
-				<img id='rotateimage' src='images/tehniks/ATV/hisun_500/3d/testing000.png' width='570' height='300'>
-
-			</div>
- -->
-
 			<div class="logo_wrap">
 				<div class="logo_wrap__snowdog">
 					<img src="images/logo/snowdog_logo.png">
@@ -69,16 +62,11 @@
 							<a id="galleryBtn__left" class="stop rotateimage disabled" data-link=".galleryItem, .galleryThumbs"><i class="fas fa-camera-retro"></i></a>
 							<a id="run3d__left" class="playstop rotateimage busy" data-link="#d3"><i class="fas fa-cube"></i></a>
 						</div>
-						<div class="models__img">
+						<div class="models__img gradient">
 							<img src="images/models/Sd_Yamaha_me-front_left.png">
 						</div>
 						<div class="dopelessrotate">
-							<!-- <a href="images/models/me/3D/yamaha_570x300049.jpg" data-fancybox data-caption="&lt;b&gt;Single photo&lt;/b&gt;&lt;br /&gt;Caption can contain &lt;em&gt;any&lt;/em&gt; HTML elements">
-    							<img id='rotateimage__left' src='images/models/me/3D/yamaha_570x300049.jpg' width='570' height='300'>
-  							</a> -->
-  							<img id='rotateimage__left' src='images/models/me/3D/yamaha_570x300049.jpg' width='570' height='300'>
-							<!-- <img src="images/models/Sd_Yamaha_me-front_left.png"> -->
-							
+  							<img id='rotateimage__left' src='images/models/me/3D/yamaha_570x300049.jpg' width='367' height='292'>
 						</div>
 					</div>
 					<div class="models__item--right">
@@ -88,11 +76,11 @@
 							<a id="galleryBtn__right" class="stop rotateimage disabled" data-link=".galleryItem, .galleryThumbs"><i class="fas fa-camera-retro"></i></a>
 							<a id="run3d__right" class="playstop rotateimage busy" data-link="#d3"><i class="fas fa-cube"></i></a>
 						</div>
-						<div class="models__img">
-							<img src="images/models/sd_yamaha_mer-front_right.png">
+						<div class="models__img gradient">
+							<img src="images/models/sd_yamaha_mer-front_right.png" class="gradient">
 						</div>
 						<div class="dopelessrotate">
-							<img id='rotateimage__right' src='images/models/me/3D/yamaha_570x300037.jpg' width='570' height='300'>
+							<img id='rotateimage__right' src='images/models/me/3D/yamaha_570x300037.jpg' width='367' height='292'>
 						</div>
 					</div>
 				</div>
@@ -404,10 +392,7 @@
 $(document).ready(function(){
 	$("#run3d__left").click(function(){
 		$(".models__item--left .models__img").slideToggle("slow");
-		// $("#btn1").attr("disabled", "disabled");
 		$(".models__item--left .dopelessrotate").slideToggle("slow");
-		// if($("#lot .item").hasClass("waste"))
-		// 	$("#state").text("Партия содержит брак!");
 		$("#run3d__left").addClass("disabled");
 		$("#galleryBtn__left").removeClass("disabled");
 		$('#rotateimage__left').tsRotate({
@@ -422,19 +407,10 @@ $(document).ready(function(){
 		$(".models__item--left .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__left").addClass("disabled");
 		$(".models__item--left .models__img").slideToggle("slow");
-		// $("#btn1").attr("disabled", "disabled");
 		$("#run3d__left").removeClass("disabled");
-		// $('#rotateimage__left').tsRotate({
-		// 	'pathtophp':'/templates/baltmotors/',
-		// 	'zoom':false,
-		// 	'reverse': true,
-		// 	'disablelogo': true,
-		// 	'autorotate': true,
-		// });
 	});
 	$("#run3d__right").click(function(){
 		$(".models__item--right .models__img").slideToggle("slow");
-		// $("#btn1").attr("disabled", "disabled");
 		$("#run3d__right").addClass("disabled");
 		$(".models__item--right .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__right").removeClass("disabled");
@@ -450,7 +426,6 @@ $(document).ready(function(){
 		$(".models__item--right .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__right").addClass("disabled");
 		$(".models__item--right .models__img").slideToggle("slow");
-		// $("#btn1").attr("disabled", "disabled");
 		$("#run3d__right").removeClass("disabled");
 	});
 });

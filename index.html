@@ -62,11 +62,11 @@
 			<div class="models">	
 				<h1 class="models_h1">Модели</h1>
 				<div class="models__column_wrap">
-					<div class="models__item">
+					<div class="models__item--left">
 						<p class="models__item-name">Snowdog-Yamaha Y13ME</p>
 						<p class="price_y13me">129 000 &#8381;</p>
 						<div class="photoBtns">
-							<a id="galleryBtn" class="stop rotateimage" data-link=".galleryItem, .galleryThumbs" href="#"><i class="fas fa-camera-retro"></i></a>
+							<a id="galleryBtn__left" class="stop rotateimage disabled" data-link=".galleryItem, .galleryThumbs"><i class="fas fa-camera-retro"></i></a>
 							<a id="run3d__left" class="playstop rotateimage busy" data-link="#d3"><i class="fas fa-cube"></i></a>
 						</div>
 						<div class="models__img">
@@ -81,15 +81,17 @@
 							
 						</div>
 					</div>
-					<div class="models__item">
+					<div class="models__item--right">
 						<p class="models__item-name">Snowdog-Yamaha Y13MER</p>
 						<p class="price_y13mer">149 000 &#8381;</p>
-						<div class="models__img dopelessrotate">
-							<div class="photoBtns">
-								<a id="galleryBtn" class="stop rotateimage" data-link=".galleryItem, .galleryThumbs" href="#"><i class="fas fa-camera-retro"></i></a>
-								<a id="run3d__right" class="playstop rotateimage busy" data-link="#d3"><i class="fas fa-cube"></i></a>
-							</div>
-							<!-- <img id='rotateimage__right' src='images/models/mer/3D/yamaha_mer-570x300038.jpg' width='570' height='300'> -->
+						<div class="photoBtns">
+							<a id="galleryBtn__right" class="stop rotateimage disabled" data-link=".galleryItem, .galleryThumbs"><i class="fas fa-camera-retro"></i></a>
+							<a id="run3d__right" class="playstop rotateimage busy" data-link="#d3"><i class="fas fa-cube"></i></a>
+						</div>
+						<div class="models__img">
+							<img src="images/models/sd_yamaha_mer-front_right.png">
+						</div>
+						<div class="dopelessrotate">
 							<img id='rotateimage__right' src='images/models/me/3D/yamaha_570x300037.jpg' width='570' height='300'>
 						</div>
 					</div>
@@ -398,63 +400,58 @@
 </body>
 </html>
 <script>
-	// jQuery('#run3d__left').click(function(){
-	// 	// jQuery('.tech-image').remove();
-	// 	// jQuery('#run3d').addClass('active');
-	// 	jQuery('#rotateimage__left').tsRotate({
-	// 	'pathtophp':'/templates/baltmotors/',
-	// 	'zoom':false,
-	// 	'reverse': true,
-	// 	'disablelogo': true,
-	// 	'autorotate': true,
-	// 	});
-	// });
-	// jQuery('#run3d__right').click(function(){
-	// 	// jQuery('.tech-image').remove();
-	// 	// jQuery('#run3d').addClass('active');
-	// 	jQuery('#rotateimage__right').tsRotate({
-	// 	'pathtophp':'/templates/baltmotors/',
-	// 	'zoom':false,
-	// 	'reverse': true,
-	// 	'disablelogo': true,
-	// 	// 'autorotate': true,
-	// 	'autorotate': true,
-	// 	});
-	// });
 
 $(document).ready(function(){
 	$("#run3d__left").click(function(){
-		$(".models__img").slideToggle("slow");
-		$("#btn1").attr("disabled", "disabled");
-		$(".dopelessrotate").slideToggle("slow", function(){
-			
-		});
+		$(".models__item--left .models__img").slideToggle("slow");
+		// $("#btn1").attr("disabled", "disabled");
+		$(".models__item--left .dopelessrotate").slideToggle("slow");
+		// if($("#lot .item").hasClass("waste"))
+		// 	$("#state").text("Партия содержит брак!");
+		$("#run3d__left").addClass("disabled");
+		$("#galleryBtn__left").removeClass("disabled");
 		$('#rotateimage__left').tsRotate({
-				'pathtophp':'/templates/baltmotors/',
-				'zoom':false,
-				'reverse': true,
-				'disablelogo': true,
-				'autorotate': true,
-			});
+			'pathtophp':'/templates/baltmotors/',
+			'zoom':false,
+			'reverse': true,
+			'disablelogo': true,
+			'autorotate': true,
+		});
 	});
-	// $("#run3d__right").click(function(){
-	// 	$(".models__img").slideToggle("slow");
-	// 	$("#btn1").attr("disabled", "disabled");
-	// 	$(".dopelessrotate").slideToggle("slow", function(){
-	// 		$('#rotateimage__left').tsRotate({
-	// 			'pathtophp':'/templates/baltmotors/',
-	// 			'zoom':false,
-	// 			'reverse': true,
-	// 			'disablelogo': true,
-	// 			'autorotate': true,
-	// 		});
-	// 	});
-	// });
-	  // $("#btn2").click(function(){
-	  //   $(".divClass1").slideToggle("slow");
-	  //   $("#btn1").removeAttr("disabled");
-	  //   $(".divClass2").slideToggle("slow");
-	  //   // $("#btn2").attr("disabled", "disabled");
-	  // });
+	$("#galleryBtn__left").click(function(){
+		$(".models__item--left .dopelessrotate").slideToggle("slow");
+		$("#galleryBtn__left").addClass("disabled");
+		$(".models__item--left .models__img").slideToggle("slow");
+		// $("#btn1").attr("disabled", "disabled");
+		$("#run3d__left").removeClass("disabled");
+		// $('#rotateimage__left').tsRotate({
+		// 	'pathtophp':'/templates/baltmotors/',
+		// 	'zoom':false,
+		// 	'reverse': true,
+		// 	'disablelogo': true,
+		// 	'autorotate': true,
+		// });
+	});
+	$("#run3d__right").click(function(){
+		$(".models__item--right .models__img").slideToggle("slow");
+		// $("#btn1").attr("disabled", "disabled");
+		$("#run3d__right").addClass("disabled");
+		$(".models__item--right .dopelessrotate").slideToggle("slow");
+		$("#galleryBtn__right").removeClass("disabled");
+		$('#rotateimage__right').tsRotate({
+			'pathtophp':'/templates/baltmotors/',
+			'zoom':false,
+			'reverse': true,
+			'disablelogo': true,
+			'autorotate': true,
+		});
+	});
+	$("#galleryBtn__right").click(function(){
+		$(".models__item--right .dopelessrotate").slideToggle("slow");
+		$("#galleryBtn__right").addClass("disabled");
+		$(".models__item--right .models__img").slideToggle("slow");
+		// $("#btn1").attr("disabled", "disabled");
+		$("#run3d__right").removeClass("disabled");
+	});
 });
 	</script>

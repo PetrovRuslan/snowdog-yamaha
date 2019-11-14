@@ -129,7 +129,7 @@ body {
 	height: auto;
 }
 .ts_holder{
-	width: 100%!important;
+	/*width: 100%!important;*/
 	/*height: auto!important;*/
 	overflow: visible;
 }

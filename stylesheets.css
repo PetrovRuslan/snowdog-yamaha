@@ -4,7 +4,15 @@ body {
 	background-image: url(images/background/background.png);
 	width: 1920px;
 	font-family: 'Open Sans', sans-serif;
-	/*overflow: hidden;*/
+	overflow-x: hidden;
+}
+@media (max-width: 1360px) {
+	body {
+		background-image: url(images/background/background.png);
+		width: 1360px;
+		font-family: 'Open Sans', sans-serif;
+		overflow-x: hidden;
+	}
 }
 .site {
 	width: 1140px;
@@ -85,7 +93,6 @@ body {
 	font-size: 45px;
 	/*font-family: 'Open Sans', sans-serif;*/
 }
-
 .models__column_wrap {
 	display: flex;
 }
@@ -113,6 +120,7 @@ body {
 	padding-right: 100px;
 }
 .models__img {
+	position: relative;
 	padding-left: 100px;
 	width: 367px;
 }
@@ -358,4 +366,43 @@ color: #888;/* цвет текста серый */
 	left: 50%;    
 	background: url(https://snipp.ru/img/plus.png) 0 0 no-repeat;
 	z-index: 100;
+}
+
+.play {
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: rgba(232,232,232,1);
+	height: 64px;
+	width: 70px;
+	border-radius: 50%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.play:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;    
+	position: absolute;
+	top: 0;    
+	left: 0;   
+	background: transparent;
+	opacity: 0.6;   
+}
+.play:before {
+	content: "";
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	margin: -26px 0 0 -26px;  
+	position: absolute;    
+	top: 50%;
+	left: 50%;    
+	background: url(https://snipp.ru/img/plus.png) 0 0 no-repeat;
+	z-index: 100;
+	cursor: pointer;
+}
+.play:hover {
+	transform:scale(1.1);
 }

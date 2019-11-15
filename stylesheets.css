@@ -32,7 +32,6 @@ body {
 }
 .logo_wrap__yamaha {
 	font-size: 31px;
-	/*font-family: 'Open Sans', sans-serif;*/
 	font-weight: bolder;
 	color: rgb(255, 255, 255);
 	text-transform: uppercase;
@@ -53,30 +52,20 @@ body {
 }
 .article {
 	display: flex;
-	flex-direction: column;
 }
-.article__row {
-	display: flex;
-	width: 100%;
-}
-.article__item {
-	width: 50%;
-	padding-top: 20px;
-	/*padding-right: 30px;*/
-	padding-left: 10px;
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-weight: 300;
+.article__img {
+	width: 49%;
+	padding-top: 30px;
+	padding-left: 30px;
 	line-height: 1.3;
 }
-
-.article__item h2 {
-	color: #314279;
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-weight: 200;
-	font-size: 30px;
-	margin-bottom: 0px;
+.article__text {
+	width: 51%;
+	padding-top: 20px;
+	line-height: 1.25;
+	padding-right: 30px;
 }
-.article__item p {
+.article__text p {
 	font-size: 18px;
 	margin-top: 10px;
 }
@@ -86,7 +75,6 @@ body {
 .models_h1 {
 	text-align: center;
 	font-size: 45px;
-	/*font-family: 'Open Sans', sans-serif;*/
 }
 .models__column_wrap {
 	display: flex;
@@ -97,7 +85,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	width: 50%;
-	/*height: 450px*/
 }
 .models__item-name {
 	text-align: center;
@@ -124,13 +111,8 @@ body {
 	height: auto;
 }
 .ts_holder{
-	/*width: 100%!important;*/
-	/*height: auto!important;*/
 	overflow: visible;
 }
-/*.round {
-	display: none!important;
-}*/
 .ts_img_view {
 	width: 100%;
 	height: auto;

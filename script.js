@@ -39,7 +39,9 @@ $(document).ready(function(){
 	});
 });
 
+$.fancybox.defaults.loop = true;
 $('[data-fancybox="preview"]').fancybox({
+	// loop: true,
   // thumbs : {
   //   autoStart : true,
   // }

@@ -189,10 +189,14 @@ body {
 }
 .ts_holder{
 	overflow: visible;
+	height: 300px!important;
 }
 .ts_img_view {
 	width: 100%;
 	height: auto;
+}
+#holder_rotateimage__left, #holder_rotateimage__right {
+	width: 570px!important;
 }
 .models__specs {
 	font-size: 15px;
@@ -527,3 +531,4 @@ main input[type=submit], main button, .btn {
     box-shadow: inset 0 0 7px rgba(255,255,255,0.7);
     margin: 30px 0 0;
 }
+

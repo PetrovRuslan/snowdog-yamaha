@@ -497,7 +497,7 @@ color: #888;/* цвет текста серый */
     line-height: 13px;
     color: #454545;
     text-decoration: none;
-    margin-left: 235px;
+    margin-left: 330px;
 }
 .btns-right .btn {
     padding: 15px 35px;
@@ -507,7 +507,7 @@ color: #888;/* цвет текста серый */
     line-height: 13px;
     color: #454545;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 main input[type=submit], main button, .btn {

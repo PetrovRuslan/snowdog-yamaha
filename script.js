@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$("#run3d__left").click(function(){
-		$(".models__item--left .models__img").slideToggle("slow");
+		$(".models__item--left .models_img").slideToggle("slow");
 		$(".models__item--left .dopelessrotate").slideToggle("slow");
 		$("#run3d__left").addClass("disabled");
 		$("#galleryBtn__left").removeClass("disabled");
@@ -15,11 +15,11 @@ $(document).ready(function(){
 	$("#galleryBtn__left").click(function(){
 		$(".models__item--left .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__left").addClass("disabled");
-		$(".models__item--left .models__img").slideToggle("slow");
+		$(".models__item--left .models_img").slideToggle("slow");
 		$("#run3d__left").removeClass("disabled");
 	});
 	$("#run3d__right").click(function(){
-		$(".models__item--right .models__img").slideToggle("slow");
+		$(".models__item--right .models_img").slideToggle("slow");
 		$("#run3d__right").addClass("disabled");
 		$(".models__item--right .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__right").removeClass("disabled");
@@ -34,15 +34,14 @@ $(document).ready(function(){
 	$("#galleryBtn__right").click(function(){
 		$(".models__item--right .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__right").addClass("disabled");
-		$(".models__item--right .models__img").slideToggle("slow");
+		$(".models__item--right .models_img").slideToggle("slow");
 		$("#run3d__right").removeClass("disabled");
 	});
 });
 
 $.fancybox.defaults.loop = true;
-$('[data-fancybox="preview"]').fancybox({
-	// loop: true,
-  // thumbs : {
-  //   autoStart : true,
-  // }
+$('.play').click(function(){
+	$('[data-fancybox="preview"]').fancybox({
+	});
 });
+

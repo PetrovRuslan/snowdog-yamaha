@@ -181,14 +181,21 @@ body {
 	padding-right: 100px;
 	font-family: Roboto;
 }
-.models__img {
-	position: relative;
+.models_img {
+	/*position: relative;*/
 	padding-left: 100px;
 	width: 367px;
 }
-.models__img img {
+.models_img img {
 	width: 100%;
 	height: auto;
+}
+.models_img__preview {
+	display: block;
+	position: relative;
+}
+.models_img__preview:hover .play{
+	transform:scale(1.1);
 }
 .ts_holder{
 	overflow: visible;
@@ -458,8 +465,8 @@ color: #888;/* цвет текста серый */
 .play:after {
 	content: "";
 	display: block;
-	width: 100px;
-	height: 100px;    
+	width: 100%;
+	height: 100%;    
 	position: absolute;
 	top: 0;    
 	left: 0;   

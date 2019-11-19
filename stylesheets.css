@@ -298,6 +298,7 @@ td:nth-child(odd) {
 	/*width: 33%;*/
 	margin: 0 auto;
 	font-size: 30px;
+	font-family: Roboto;
 }
 .accs__column {
 	display: flex;

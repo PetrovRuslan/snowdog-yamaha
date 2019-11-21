@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
 body {
 	background-image: url(images/background/background.png);
 	width: 1920px;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
+}
+@font-face {
+	font-family: 'Conv_Roboto-Regular';
+	src: url('fonts/Roboto-Regular.eot');
+	src: local('☺'), url('fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype'), url('fonts/Roboto-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @media (max-width: 1360px) {
 	body {
@@ -164,7 +171,7 @@ body {
 	text-align: left;
 	padding-left: 105px;
 	padding-top: 45px;
-	font-family: Roboto;
+	font-family: Conv_Roboto-Regular;
 }
 .reverse {
 	color: #314279;
@@ -179,7 +186,7 @@ body {
 	margin-top: 0px;
 	text-align: right;
 	padding-right: 100px;
-	font-family: Roboto;
+	font-family: Conv_Roboto-Regular;
 }
 .models_img {
 	/*position: relative;*/
@@ -298,7 +305,7 @@ td:nth-child(odd) {
 	/*width: 33%;*/
 	margin: 0 auto;
 	font-size: 30px;
-	font-family: Roboto;
+	font-family:'Conv_Roboto-Regular',Sans-Serif;
 }
 .accs__column {
 	display: flex;
@@ -407,7 +414,7 @@ td:nth-child(odd) {
 }
 
 .photoBtns {
-	font-family: 'Roboto', sans-serif;
+	font-family:'Conv_Roboto-Regular',Sans-Serif;
     font-size: 17px;
     line-height: 25px;
     font-weight: 400;
@@ -517,7 +524,7 @@ main input[type=submit], main button, .btn {
     transition: all 0.3s;
     padding: 35px 60px;
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family:'Conv_Roboto-Regular',Sans-Serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 15px;

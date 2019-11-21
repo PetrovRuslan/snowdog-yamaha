@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: petrovru/lep
+    restart: always
+    ports:
+    - "80:80"
+    volumes:
+    - ./:/var/www/html
+    environment:
+    - DEPLOYMENT=development

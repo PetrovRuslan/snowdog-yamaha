@@ -1,7 +1,7 @@
 # Страница мотобуксировщика Snowdog Yamaha 
 https://snowdog-yamaha.ru/
 
-### Запуск на чистой Centos
+### Запуск на CentOS 7
 #### Требует наличия:
 <ul>
   <li> Git

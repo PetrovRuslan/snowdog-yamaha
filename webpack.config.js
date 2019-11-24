@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
@@ -72,10 +72,10 @@ module.exports = {
             template: './index.pug'
         }),
         new CopyWebpackPlugin([
-          { from: 'scripts', to: 'scripts' },
-          { from: 'css', to: 'css' },
-          { from: 'templates', to: 'templates'},
-          { from: 'images', to: 'images'},
+          { from: 'src/scripts', to: 'src/scripts' },
+          { from: 'src/css', to: 'src/css' },
+          { from: 'src/templates', to: 'src/templates'},
+          { from: 'src/images', to: 'src/images'},
         ]),
     ]
 }

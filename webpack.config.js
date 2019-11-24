@@ -76,6 +76,7 @@ module.exports = {
           { from: 'src/css', to: 'src/css' },
           { from: 'src/templates', to: 'src/templates'},
           { from: 'src/images', to: 'src/images'},
+          { from: 'src/fonts', to: 'src/fonts'},
         ]),
     ]
 }

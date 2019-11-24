@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$("#run3d__left").addClass("disabled");
 		$("#galleryBtn__left").removeClass("disabled");
 		$('#rotateimage__left').tsRotate({
-			'pathtophp':'/templates/baltmotors/',
+			'pathtophp':'src/templates/',
 			'zoom':false,
 			'reverse': true,
 			'disablelogo': true,
@@ -24,7 +24,7 @@ $(document).ready(function(){
 		$(".models__item--right .dopelessrotate").slideToggle("slow");
 		$("#galleryBtn__right").removeClass("disabled");
 		$('#rotateimage__right').tsRotate({
-			'pathtophp':'/templates/baltmotors/',
+			'pathtophp':'src/templates/',
 			'zoom':false,
 			'reverse': true,
 			'disablelogo': true,

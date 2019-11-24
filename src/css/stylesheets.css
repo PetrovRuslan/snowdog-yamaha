@@ -9,14 +9,14 @@
 	font-style: normal;
 }
 body {
-	background-image: url(images/background/background.png);
+	background-image: url(/src/images/background/background.png);
 	width: 1920px;
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 }
 @media (max-width: 1360px) {
 	body {
-		background-image: url(images/background/background.png);
+		background-image: url(/src/images/background/background.png);
 		width: 1360px;
 		font-family: 'Open Sans', sans-serif;
 		overflow-x: hidden;
@@ -353,9 +353,6 @@ td:nth-child(odd) {
 	background-color: #ffffff;
 }
 .tab input, .tab-content { display: none; }
-.tab {
-	/*margin-bottom: 10px;  Расстояние между пунктами */
-}
 .tab label {
 	font-size: 24px;
 	text-decoration: underline;

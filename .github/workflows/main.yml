@@ -1,19 +1,20 @@
+ame: Deploy-via-ftp-to-test
 on: 
   push:
     branches: 
       - old
-name: Publish Website Dry Run
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: FTP-Deploy-Action
-      uses: PetrovRuslan/snowdog-yamaha
-      env:
-        FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
-        FTP_USERNAME: actions@u0066663.cp.regruhosting.ru
-        FTP_PASSWORD: 7l$,1M+zBXN.
+    - uses: actions/checkout@old
+#     - name: Upload ftp
+#       uses: sebastianpopp/ftp-action@releases/v1
+      with:
+        host: ftp.u0066663.cp.regruhosting.ru
+        user: actions@u0066663.cp.regruhosting.ru
+#         password: ${{ secrets.FTP_PASSWORD }}
+        password: 7l$,1M+zBXN.
         localDir: "/"
         remoteDir: "/"

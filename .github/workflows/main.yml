@@ -1,4 +1,4 @@
-ame: Deploy-via-ftp-to-test
+name: Deploy-via-ftp-to-test
 on: 
   push:
     branches: 

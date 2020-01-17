@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
-      uses: PetrovRuslan/snowdog-yamaha@2.0.0
+      uses: PetrovRuslan/snowdog-yamaha
       env:
         FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
         FTP_USERNAME: actions@u0066663.cp.regruhosting.ru

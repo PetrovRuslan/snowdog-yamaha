@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Upload ftp
-      uses: PetrovRuslan/snowdog-yamaha@releases/v1
+      uses: PetrovRuslan/snowdog-yamaha@old
       with:
         host: ftp.u0066663.cp.regruhosting.ru
         user: actions@u0066663.cp.regruhosting.ru

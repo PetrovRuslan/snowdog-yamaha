@@ -4,7 +4,7 @@ on:
     branches: 
       - old
 jobs:
-  deploy:
+  snowdog-yamaha:
     name: Deploy
     runs-on: ubuntu-latest
     steps:

@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-#     - name: Upload ftp
-#       uses: sebastianpopp/ftp-action@releases/v1
+    - name: Upload ftp
+      uses: PetrovRuslan/snowdog-yamaha@releases/v1
       with:
         host: ftp.u0066663.cp.regruhosting.ru
         user: actions@u0066663.cp.regruhosting.ru

@@ -7,10 +7,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
-      uses: PetrovRuslan/snowdog-yamaha@old
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
         FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
         FTP_USERNAME: actions@u0066663.cp.regruhosting.ru
-        FTP_PASSWORD: 7l$,1M+zBXN.
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         ARGS: --delete
-        # --delete arg will delete files on the server if you've deleted them in git
+

@@ -5,7 +5,7 @@ jobs:
     name: snowdog-yamaha
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
+#     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
       uses: PetrovRuslan/snowdog-yamaha@old
       env:

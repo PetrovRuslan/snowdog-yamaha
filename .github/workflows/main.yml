@@ -1,15 +1,16 @@
 on: push
 name: Publish Website
 jobs:
-  snowdog-yamaha:
-    name: snowdog-yamaha
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-#     - uses: actions/checkout@master
+    - uses: actions/checkout@master
     - name: FTP-Deploy-Action
       uses: PetrovRuslan/snowdog-yamaha@old
       env:
         FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
         FTP_USERNAME: actions@u0066663.cp.regruhosting.ru
         FTP_PASSWORD: 7l$,1M+zBXN.
-        # ARGS: --delete
+        ARGS: --delete
+        # --delete arg will delete files on the server if you've deleted them in git

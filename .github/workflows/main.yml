@@ -12,5 +12,9 @@ jobs:
         FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
         FTP_USERNAME: actions@u0066663.cp.regruhosting.ru
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        ARGS: --delete
+        ARGS: 
+          --delete
+          --exclude=.ftpquota
+          --exclude-glob=.git*/** 
+          --exclude-glob=.git**
 

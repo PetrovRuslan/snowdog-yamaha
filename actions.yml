@@ -19,9 +19,9 @@ inputs:
     description: 'Remote directory'
     required: false
     default: '.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
-branding:
-  color: 'blue'
-  icon: 'upload-cloud'
+# runs:
+#   using: 'docker'
+#   image: 'Dockerfile'
+# branding:
+#   color: 'blue'
+#   icon: 'upload-cloud'

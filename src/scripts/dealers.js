@@ -7,112 +7,128 @@ function toLatin(text){
     }
 	return text;
 }
-let dealers = [
-  {
-    city: "Ижевск",
-    name: "Ямаха Центр Ижевск",
-    address: "г. Ижевск, Проспект Имени конструктора Калашникова М.Т., д.4",
-    phone: "+7 (3412) 245-245",
-  },
-  {
-    city: "Киров",
-    name: "Авторемстрой",
-    address: "г. Киров, ул. Московская, 166-Б",
-    phone: "+7 (8332) 621-000",
-  },
-  {
-    city: "Кострома",
-    name: "Правый берег",
-    address: "г. Кострома, ул. Нижне-Набережная, д. 66",
-    phone: "+7 (4942) 53-26-61",
-  },
-  {
-    city: "Москва",
-    name: "Ямаха Мотор Центр Каширский",
-    address: "г. Москва, 27 км внешней стороны МКАД, ТЦ «Формула Х»",
-    phone: "+7 (495) 66-434-77",
-  },
-  {
-    city: "Мурманск",
-    name: "Ямаха Центр Мурманск",
-    address: "г. Мурманск, ул. Прибрежная, д. 145",
-    phone: "+7 (8152) 70-04-11",
-  },
-  {
-    city: "Пермь",
-    name: "Актив Драйв",
-    address: "г. Пермь, ул. Лифанова, д. 3",
-    phone: "+7 (342) 254-42-42",
-  },
-  {
-    city: "Петрозаводск",
-    name: "Ямаха Центр Петрозаводск",
-    address: "Республика Карелия, г. Петрозаводск, Шуйское ш., д. 11, стр. 1",
-    phone: "+7 (8142) 797-081",
-  },
-  {
-    city: "Санкт-Петербург",
-    name: "ВВС-Моторс",
-    address: "г. Санкт-Петербург, ул. Ново-Рыбинская, д. 19/21",
-    phone: "+7 (812) 337-10-41",
-  },
-  {
-    city: "Сыктывкар",
-    name: "Коми моторс",
-    address: "Республика Коми, г. Сыктывкар, ул. Коммунистическая, д. 85",
-    phone: "+7 (8212) 31-09-45",
-  },
-  {
-    city: "Тольятти",
-    name: "Джей-Ти",
-    address: "Самарская обл., г. Тольятти, ул. Спортивная, д. 34",
-    phone: "+7 (8482) 75-13-73",
-  },
-  {
-    city: "Уфа",
-    name: "Ямаха Центр Уфа",
-    address: "г. Уфа, ул. Менделеева, 134",
-    phone: "+7 (347) 277-47-37",
-  },
-  {
-    city: "Ханты-Мансийск",
-    name: "Экстрим",
-    address: "ХМАО-Югра, г. Ханты-Мансийск, ул. Заводская, д. 24, ТЦ «Меридиан»",
-    phone: "+7 (3467) 33-67-83",
-  },
-  {
-    city: "Череповец",
-    name: "ИП Мачульский",
-    address: "Вологодская обл., г. Череповец, ул. Гоголя, д. 45",
-    phone: "+7 (8202) 28-45-65",
-  },
-  {
-    city: "Южно-Сахалинск",
-    name: "Вектор",
-    address: "Сахалинская обл., г. Южно-Сахалинск, ул. Ленина, д. 561",
-    phone: "+7 (4242) 700-300",
-  },
-];
+let dealers = {
+	"Ижевск": {
+		"Ямаха Центр Ижевск": {
+			address: "г. Ижевск, Проспект Имени конструктора Калашникова М.Т., д.4",
+			phone: "+7 (3412) 245-245"
+		},
+	},
+	"Калининград": {
+		"Ямаха Центр Калининград": {
+			address: "г. Калининград, ул. Ялтинская, д. 125",
+			phone: "+7 (4012) 33-44-11"
+		},
+	},
+	"Каменск-Уральский": {
+		"Мотоцентр Драйв": {
+			address: "Свердловская обл., г. Каменск-Уральский, ул. Озерная, д. 6",
+			phone: "+7 (912) 21-11-300"
+		},
+	},
+	"Киров": {
+		"Авторемстрой": {
+			address: "г. Киров, ул. Московская, 166-Б",
+			phone: "+7 (8332) 621-000"
+		},
+	},
+	"Москва": {
+		"Ямаха Мотор Центр Каширский": {
+			address: "г. Москва, 27 км внешней стороны МКАД, ТЦ «Формула Х»",
+			phone: "+7 (495) 66-434-77"
+		},
+		"Ямаха Мотор Центр Измайлово": {
+			address: "Московская обл., г. Балашиха, ул. Гидрогородок, дом 9",
+			phone: "+7 (495) 66-434-66"
+		},
+	},
+	"Мурманск": {
+		"Ямаха Центр Мурманск": {
+			address: "г. Мурманск, ул. Прибрежная, д. 145",
+			phone: "+7 (8152) 70-04-11"
+		},
+	},
+	"Пермь": {
+		"Актив Драйв": {
+			address: "г. Пермь, ул. Лифанова, д. 3",
+			phone: "+7 (342) 254-42-42"
+		},
+	},
+	"Петрозаводск": {
+		"Ямаха Центр Петрозаводск": {
+			address: "Республика Карелия, г. Петрозаводск, Шуйское ш., д. 11, стр. 1",
+			phone: "+7 (8142) 797-081"
+		},
+	},
+	"Санкт-Петербург": {
+		"ВВС-Моторс": {
+			address: "г. Санкт-Петербург, ул. Ново-Рыбинская, д. 19/21",
+			phone: "+7 (812) 337-10-41"
+		},
+	},
+	"Сыктывкар": {
+		"Коми моторс": {
+			address: "Республика Коми, г. Сыктывкар, ул. Коммунистическая, д. 85",
+			phone: "+7 (8212) 31-09-45"
+		},
+	},
+	"Тольятти": {
+		"Джей-Ти": {
+			address: "Республика Коми, г. Сыктывкар, ул. Коммунистическая, д. 85",
+			phone: "+7 (8212) 31-09-45"
+		},
+	},
+	"Уфа": {
+		"Ямаха Центр Уфа": {
+			address: "г. Уфа, ул. Менделеева, 134",
+			phone: "+7 (347) 277-47-37"
+		},
+	},
+	"Ханты-Мансийск": {
+		"Экстрим": {
+			address: "ХМАО-Югра, г. Ханты-Мансийск, ул. Заводская, д. 24, ТЦ «Меридиан»",
+			phone: "+7 (3467) 33-67-83"
+		},
+	},
+	"Череповец": {
+		"ИП Мачульский": {
+			address: "Вологодская обл., г. Череповец, ул. Гоголя, д. 45",
+			phone: "+7 (8202) 28-45-65"
+		},
+	},
+	"Южно-Сахалинск": {
+		"Вектор": {
+			address: "Сахалинская обл., г. Южно-Сахалинск, ул. Ленина, д. 561",
+			phone: "+7 (4242) 700-300"
+		},
+	},
+}
 let dealersList = document.querySelector(".dealers__list");
 
-for (var i=0; i < dealers.length; i++) {
-  let divTab = document.createElement("div");
-  divTab.className = "tab";
-  dealersList.append(divTab);
-  let inputCity = document.createElement("input");
-  inputCity.setAttribute('type', 'checkbox');
-  inputCity.id = toLatin(dealers[i].city);
-  inputCity.setAttribute('name', 'tab-group')
-  divTab.append(inputCity);
-  let labelCity = document.createElement("label");
-  labelCity.setAttribute('for', toLatin(dealers[i].city))
-  labelCity.className = "tab-title";
-  labelCity.innerText = dealers[i].city;
-  divTab.append(labelCity);
-  let tabSection = document.createElement("section");
-  tabSection.className = "tab-content";
-  tabSection.insertAdjacentHTML("beforeend", `<p><strong>${dealers[i].name}</strong></p>`);
-  tabSection.insertAdjacentHTML("beforeend", `<p>${dealers[i].address}</p>`);
-  tabSection.insertAdjacentHTML("beforeend", `<p>${dealers[i].phone}</p>`);
-  divTab.append(tabSection);
+for (region in dealers) {
+	let divTab = document.createElement("div");
+	divTab.className = "tab";
+	dealersList.append(divTab);
+	let inputCity = document.createElement("input");
+	inputCity.setAttribute('type', 'checkbox');
+	inputCity.id = toLatin(region);
+	inputCity.setAttribute('name', 'tab-group')
+	divTab.append(inputCity);
+	let labelCity = document.createElement("label");
+	labelCity.setAttribute('for', toLatin(region))
+	labelCity.className = "tab-title";
+	labelCity.innerText = region;
+	divTab.append(labelCity);
+	let tabSection = document.createElement("section");
+    for (prop in dealers[region]) {
+    	tabSection.className = "tab-content";
+  		tabSection.insertAdjacentHTML("beforeend", `<p><strong>${prop}</strong></p>`);
+  		tabSection.insertAdjacentHTML("beforeend", `<p>${dealers[region][prop].address}</p>`);
+  		tabSection.insertAdjacentHTML("beforeend", `<p>${dealers[region][prop].phone}</p>`);
+  		divTab.append(tabSection);
+        console.log(prop);
+        console.log(dealers[region][prop].address);
+        console.log(dealers[region][prop].phone);
+    }
 }
+

@@ -7,11 +7,12 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      uses: PetrovRuslan/FTP-Deploy-Action@test
       env:
         FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
-        FTP_USERNAME: actions@snowdog-yamaha.ru
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        FTP_USERNAME: test@u0066663.cp.regruhosting.ru
+        FTP_PASSWORD: ${{ secrets.TEST_FTP_PASS }}
+        LOCAL_DIR: dist/
         ARGS: 
           --delete
           --exclude=.ftpquota

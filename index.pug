@@ -2,35 +2,32 @@ doctype html
 html
 	head
 		meta(charset="utf-8")
-    title Snowdog-Yamaha
-    link(rel="icon" href="images/favicon.png")
-    link(rel="stylesheet" type="text/css" href="normalize.css")
-    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js")
-    script(type="text/javascript" src="scripts/dopelessRotate.js")
-    script(type="text/javascript" src="code.js")
-    link(rel="stylesheet" href="css/style.css" type="text/css" media="screen")
-    link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
-    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
-    link(rel="stylesheet" type="text/css" href="stylesheets.css")
-    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
-    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js")
-    script(src="script.js")
-    // Yandex.Metrika counter
-    script(type="text/javascript").
-      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-      ym(56388541, "init", {
-      clickmap:true,
-      trackLinks:true,
-      accurateTrackBounce:true,
-      webvisor:true
-      });
-    noscript
-      div
-        img(src="https://mc.yandex.ru/watch/56388541" style="position:absolute; left:-9999px;" alt="")
-    // /Yandex.Metrika counter
+		title Snowdog-Yamaha
+		link(rel="stylesheet" type="text/css" href="src/css/normalize.css")
+		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js")
+		script(type="text/javascript" src="src/scripts/dopelessRotate.js")
+		link(rel="stylesheet" href="src/css/dopelessRotate/style.css" type="text/css" media="screen")
+		link(rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
+		script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
+		link(rel="stylesheet" type="text/css" href="src/css/stylesheets.css")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous")
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js")
+		script(src="src/scripts/script.js")
+		script(type="text/javascript").
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+			ym(56388541, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+			});
+		noscript
+			div
+				img(src="https://mc.yandex.ru/watch/56388541" style="position:absolute; left:-9999px;" alt="")
+		// /Yandex.Metrika counter
 	body
 		.container
 			.site
@@ -47,115 +44,4 @@ html
 						p
 							| Спрашивайте наши новые буксировщики у дилеров Yamaha по всей России или оставляйте заявку на нашем сайте уже сегодня, чтобы успеть опробовать их в ближайшем зимнем сезоне.
 					.dealers__list
-						.tab
-							input#izhevsk(type="checkbox" name="tab-group")
-							label.tab-title(for="izhevsk") Ижевск
-							section.tab-content
-								p
-									b Ямаха Центр Ижевск
-								p г. Ижевск, Проспект имени Конструктора Калашникова М.Т., д. 4
-								p +7 (3412) 245-245
-						.tab
-							input#kirov(type="checkbox" name="tab-group")
-							label.tab-title(for="kirov") Киров
-							section.tab-content
-								p
-									b Авторемстрой
-								p г. Киров, ул. Московская, 166-Б 
-								p +7 (8332) 621-000
-						.tab
-							input#kostroma(type="checkbox" name="tab-group")
-							label.tab-title(for="kostroma") Кострома
-							section.tab-content
-								p
-									b Правый берег
-								p г. Кострома, ул. Нижне-Набережная, д. 66
-								p +7 (4942) 53-26-61
-						.tab
-							input#moskva(type="checkbox" name="tab-group")
-							label.tab-title(for="moskva") Москва
-							section.tab-content
-								p
-									b Ямаха Мотор Центр Каширский
-								p г. Москва, 27 км внешней стороны МКАД, ТЦ «Формула Х»
-								p +7 (495) 66-434-77
-						.tab
-							input#murmansk(type="checkbox" name="tab-group")
-							label.tab-title(for="murmansk") Мурманск
-							section.tab-content
-								p
-									b Ямаха Центр Мурманск
-								p г. Мурманск, ул. Прибрежная, д. 145
-								p +7 (8152) 70-04-11
-						.tab
-							input#perm(type="checkbox" name="tab-group")
-							label.tab-title(for="perm") Пермь
-							section.tab-content
-								p
-									b Актив Драйв
-								p г. Пермь, ул. Лифанова, д. 3
-								p +7 (342) 254-42-42
-						.tab
-							input#petrozavodsk(type="checkbox" name="tab-group")
-							label.tab-title(for="petrozavodsk") Петрозаводск
-							section.tab-content
-								p
-									b Ямаха Центр Петрозаводск
-								p Республика Карелия, г. Петрозаводск, Шуйское ш., д. 11, стр. 1
-								p +7 (8142) 797-081
-						.tab
-							input#sankt-peterburg(type="checkbox" name="tab-group")
-							label.tab-title(for="sankt-peterburg") Санкт-Петербург
-							section.tab-content
-								p
-									b ВВС-Моторс
-								p г. Санкт-Петербург, ул. Ново-Рыбинская, д. 19/21
-								p +7 (812) 337-10-41
-						.tab
-							input#syktyvkar(type="checkbox" name="tab-group")
-							label.tab-title(for="syktyvkar") Сыктывкар
-							section.tab-content
-								p
-									b Коми моторс
-								p Республика Коми, г. Сыктывкар, ул. Коммунистическая, д. 85 
-								p +7 (8212) 31-09-45
-						.tab
-							input#toliatti(type="checkbox" name="tab-group")
-							label.tab-title(for="toliatti") Тольятти
-							section.tab-content
-								p
-									b Джей-Ти
-								p Самарская обл., г. Тольятти, ул. Спортивная, д. 34 
-								p +7 (8482) 75-13-73
-						.tab
-							input#ufa(type="checkbox" name="tab-group")
-							label.tab-title(for="ufa") Уфа
-							section.tab-content
-								p
-									b Ямаха Центр Уфа
-								p г. Уфа, ул. Менделеева, 134
-								p +7 (347) 277-47-37
-						.tab
-							input#khanty-mansiysk(type="checkbox" name="tab-group")
-							label.tab-title(for="khanty-mansiysk") Ханты-Мансийск
-							section.tab-content
-								p
-									b Экстрим
-								p ХМАО-Югра, г. Ханты-Мансийск, ул. Заводская, д. 24, ТЦ «Меридиан» 
-								p +7 (3467) 33-67-83
-						.tab
-							input#cherepovets(type="checkbox" name="tab-group")
-							label.tab-title(for="cherepovets") Череповец
-							section.tab-content
-								p
-									b ИП Мачульский
-								p Вологодская обл., г. Череповец, ул. Гоголя, д. 45
-								p +7 (8202) 28-45-65
-						.tab
-							input#sakhalin(type="checkbox" name="tab-group")
-							label.tab-title(for="sakhalin") Южно-Сахалинск
-							section.tab-content
-								p
-									b Вектор
-								p Сахалинская обл., г. Южно-Сахалинск, ул. Ленина, д. 561
-								p +7 (4242) 700-300
+script(src="src/scripts/dealers.js")

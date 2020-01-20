@@ -1,0 +1,21 @@
+on: push
+name: Publish Website
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: ftp.u0066663.cp.regruhosting.ru
+        FTP_USERNAME: actions@snowdog-yamaha.ru
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        ARGS: 
+          --delete
+          --exclude=.ftpquota
+          --exclude-glob=.git*/** 
+          --exclude-glob=.git**
+          --exclude=docker-compose.yml
+          --exclude=README.md
